@@ -1,0 +1,18 @@
+﻿<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+@if(ViewBag.Title != null) //Если свойство временного динамического хранилища (Title) не равно null
+{
+    <title>@ViewBag.Title</title> //то соответсвенно Title будет этим значением
+}
+else
+{
+    <title>Моя компания</title> //в противном случае "Моя компания"
+}
+@if(ViewBag.Description != null) //такая же логика
+{
+    <meta name="description" content="@ViewBag.Description" />
+}
+@if(ViewBag.Keywords != null) //такая же логика
+{
+    <meta name="keywords" content="@ViewBag.Keywords" />
+}
